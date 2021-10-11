@@ -12,6 +12,86 @@ namespace ImageProcessingHWK2
 
         #region static
 
+        public static ColorImage GetHistogramEqualizedFixedRangeImage(ColorImage img, bool FullRange = false )
+        {
+            int rows = img.pixels.GetLength(0);
+            int cols = img.pixels.GetLength(1);
+            int[,,] pixels = new int[rows, cols, 3];
+            double[,] his = new double[256, 3];
+            int[] mins = new int[3];
+            int[] ranges = new int[3];
+            for( int i = 0; i < 3;i++)
+            {
+                mins[i] = int.MaxValue;
+                ranges[i] = int.MinValue;
+            }
+            for( int r = 0; r < rows;r++)
+                for( int c = 0; c < cols; c++ )
+                {
+                    for (int d = 0; d < 3; d++)
+                    {
+                        his[img.pixels[r, c, d], d]++;
+                        if (img.pixels[r, c, d] < mins[d])
+                            mins[d] = img.pixels[r, c, d];
+                        else if(img.pixels[r, c, d] > ranges[d])
+                            ranges[d] = img.pixels[r, c, d];
+                    }
+                }
+            // Cumulated countes
+            for (int d = 0; d < 3; d++)
+                for (int i = 1; i < 256; i++)
+                    his[i, d] += his[i - 1, d];
+            // Normalized
+            int total = rows * cols;
+            for (int d = 0; d < 3; d++)
+                for (int i = 1; i < 256; i++)
+                    his[i, d] /= total;
+
+            // linear map histogram
+            for (int i = 0; i < 3; i++) ranges[i] = ranges[i] - mins[i];
+            for (int d = 0; d < 3; d++)
+                for (int i = 0; i < 256; i++)
+                {
+                    if( FullRange)
+                        his[i, d] = (int)( his[i, d] * 255.0);
+                  else
+                        his[i, d] = (int)( mins[d] + his[i, d] * ranges[d] );
+
+                    if (his[i, d] < 0) his[i, d] = 0;
+                    else if (his[i, d] > 255) his[i, d] = 255;
+                }
+
+            for (int r = 0; r < rows; r++)
+                for (int c = 0; c < cols; c++)
+                {
+                    for (int d = 0; d < 3; d++)
+                    {
+                        pixels[r, c, d] =  (int)his[img.pixels[r, c, d], d];
+                    }
+                }
+            return new ColorImage(pixels);
+        }
+
+
+        public static int[,] SubtrasteTwoMonoImages( MonoToneImage img1, MonoToneImage img2 )
+        {
+            int rows = img1.intensities.GetLength(0);
+            int cols = img1.intensities.GetLength(1);
+            int[,] difference = new int[rows, cols ];
+            int min = int.MaxValue;
+            for (int r = 0; r < rows; r++)
+                for (int c = 0; c < cols; c++)
+                {
+                    for (int d = 0; d < 3; d++)
+                    {
+                        difference[r, c] = img1.intensities[r, c] - img2.intensities[r, c];
+                        if (difference[r, c] < min)
+                            min = difference[r, c];
+                    }
+                }
+            return difference;
+        }
+
         public static ColorImage GetContrasthangedImage(ColorImage img, int contrastLevel)
         {
             double factor = 259.0 * (255 + contrastLevel) / 255.0 / (259.0 - contrastLevel);

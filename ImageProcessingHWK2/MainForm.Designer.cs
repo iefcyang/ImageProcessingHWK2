@@ -28,49 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.openImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.pbxMain = new System.Windows.Forms.PictureBox();
-            this.pnl001 = new System.Windows.Forms.Panel();
-            this.pbx001 = new System.Windows.Forms.PictureBox();
-            this.lab001 = new System.Windows.Forms.Label();
-            this.btnColorAveragedGray = new System.Windows.Forms.Button();
-            this.btnBetterGray = new System.Windows.Forms.Button();
-            this.cht001 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pbx002 = new System.Windows.Forms.PictureBox();
-            this.cht002 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lab002 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pbx003 = new System.Windows.Forms.PictureBox();
-            this.cht003 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lab003 = new System.Windows.Forms.Label();
-            this.tkbThresh = new System.Windows.Forms.TrackBar();
-            this.labThresh = new System.Windows.Forms.Label();
-            this.btnBlackWhite = new System.Windows.Forms.Button();
-            this.tkbLevel = new System.Windows.Forms.TrackBar();
-            this.labLevel = new System.Windows.Forms.Label();
-            this.btnLeveledGray = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pagMonoImage = new System.Windows.Forms.TabPage();
+            this.btnBlackWhite = new System.Windows.Forms.Button();
+            this.btnLeveledGray = new System.Windows.Forms.Button();
+            this.btnColorAveragedGray = new System.Windows.Forms.Button();
+            this.labLevel = new System.Windows.Forms.Label();
+            this.btnBetterGray = new System.Windows.Forms.Button();
+            this.tkbLevel = new System.Windows.Forms.TrackBar();
+            this.tkbThresh = new System.Windows.Forms.TrackBar();
+            this.labThresh = new System.Windows.Forms.Label();
             this.pagColorEdit = new System.Windows.Forms.TabPage();
+            this.btnBrightness = new System.Windows.Forms.Button();
             this.btnContrast = new System.Windows.Forms.Button();
             this.labContrast = new System.Windows.Forms.Label();
             this.tkbContrast = new System.Windows.Forms.TrackBar();
             this.tkbBrightness = new System.Windows.Forms.TrackBar();
             this.labBrightness = new System.Windows.Forms.Label();
-            this.btnBrightness = new System.Windows.Forms.Button();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.pnl001 = new System.Windows.Forms.Panel();
+            this.pbx001 = new System.Windows.Forms.PictureBox();
+            this.cht001 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lab001 = new System.Windows.Forms.Label();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbx002 = new System.Windows.Forms.PictureBox();
+            this.cht002 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lab002 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rtbDiff = new System.Windows.Forms.RichTextBox();
+            this.pbx003 = new System.Windows.Forms.PictureBox();
+            this.cht003 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lab003 = new System.Windows.Forms.Label();
+            this.rdbFixRange = new System.Windows.Forms.RadioButton();
+            this.rdbFullRange = new System.Windows.Forms.RadioButton();
+            this.btnHistogramFunction = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -81,19 +85,10 @@
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMain)).BeginInit();
-            this.pnl001.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx001)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht001)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx002)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht002)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx003)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht003)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tkbThresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tkbLevel)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.pagMonoImage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tkbLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tkbThresh)).BeginInit();
             this.pagColorEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tkbContrast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tkbBrightness)).BeginInit();
@@ -101,10 +96,19 @@
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
+            this.pnl001.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx001)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht001)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx002)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht002)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx003)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht003)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -180,259 +184,6 @@
             this.pbxMain.TabIndex = 0;
             this.pbxMain.TabStop = false;
             // 
-            // pnl001
-            // 
-            this.pnl001.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.pnl001.Controls.Add(this.pbx001);
-            this.pnl001.Controls.Add(this.cht001);
-            this.pnl001.Controls.Add(this.lab001);
-            this.pnl001.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl001.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.pnl001.Location = new System.Drawing.Point(0, 0);
-            this.pnl001.Name = "pnl001";
-            this.pnl001.Size = new System.Drawing.Size(361, 658);
-            this.pnl001.TabIndex = 0;
-            // 
-            // pbx001
-            // 
-            this.pbx001.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx001.Location = new System.Drawing.Point(0, 35);
-            this.pbx001.Name = "pbx001";
-            this.pbx001.Size = new System.Drawing.Size(361, 484);
-            this.pbx001.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx001.TabIndex = 1;
-            this.pbx001.TabStop = false;
-            // 
-            // lab001
-            // 
-            this.lab001.BackColor = System.Drawing.Color.Purple;
-            this.lab001.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lab001.ForeColor = System.Drawing.Color.White;
-            this.lab001.Location = new System.Drawing.Point(0, 0);
-            this.lab001.Name = "lab001";
-            this.lab001.Size = new System.Drawing.Size(361, 35);
-            this.lab001.TabIndex = 0;
-            this.lab001.Text = "  ";
-            this.lab001.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnColorAveragedGray
-            // 
-            this.btnColorAveragedGray.Location = new System.Drawing.Point(6, 9);
-            this.btnColorAveragedGray.Name = "btnColorAveragedGray";
-            this.btnColorAveragedGray.Size = new System.Drawing.Size(274, 33);
-            this.btnColorAveragedGray.TabIndex = 0;
-            this.btnColorAveragedGray.Text = "RGV Averaged Gray Image";
-            this.btnColorAveragedGray.UseVisualStyleBackColor = true;
-            this.btnColorAveragedGray.Click += new System.EventHandler(this.btnColorAveragedGray_Click);
-            // 
-            // btnBetterGray
-            // 
-            this.btnBetterGray.Location = new System.Drawing.Point(6, 48);
-            this.btnBetterGray.Name = "btnBetterGray";
-            this.btnBetterGray.Size = new System.Drawing.Size(274, 33);
-            this.btnBetterGray.TabIndex = 1;
-            this.btnBetterGray.Text = "RGV Arranged Gray Image";
-            this.btnBetterGray.UseVisualStyleBackColor = true;
-            this.btnBetterGray.Click += new System.EventHandler(this.btnBetterGray_Click);
-            // 
-            // cht001
-            // 
-            chartArea25.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea25.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea25.AxisX.Title = "intensity";
-            chartArea25.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea25.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea25.AxisY.Title = "count";
-            chartArea25.Name = "ChartArea1";
-            this.cht001.ChartAreas.Add(chartArea25);
-            this.cht001.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cht001.Location = new System.Drawing.Point(0, 519);
-            this.cht001.Name = "cht001";
-            series25.ChartArea = "ChartArea1";
-            series25.Color = System.Drawing.Color.Green;
-            series25.Name = "Series1";
-            this.cht001.Series.Add(series25);
-            this.cht001.Size = new System.Drawing.Size(361, 139);
-            this.cht001.TabIndex = 2;
-            this.cht001.Text = "chart1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.pbx002);
-            this.panel1.Controls.Add(this.cht002);
-            this.panel1.Controls.Add(this.lab002);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 658);
-            this.panel1.TabIndex = 3;
-            // 
-            // pbx002
-            // 
-            this.pbx002.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx002.Location = new System.Drawing.Point(0, 35);
-            this.pbx002.Name = "pbx002";
-            this.pbx002.Size = new System.Drawing.Size(343, 484);
-            this.pbx002.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx002.TabIndex = 1;
-            this.pbx002.TabStop = false;
-            // 
-            // cht002
-            // 
-            chartArea26.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea26.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea26.AxisX.Title = "intensity";
-            chartArea26.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea26.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea26.AxisY.Title = "count";
-            chartArea26.Name = "ChartArea1";
-            this.cht002.ChartAreas.Add(chartArea26);
-            this.cht002.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cht002.Location = new System.Drawing.Point(0, 519);
-            this.cht002.Name = "cht002";
-            series26.ChartArea = "ChartArea1";
-            series26.Color = System.Drawing.Color.Green;
-            series26.Name = "Series1";
-            this.cht002.Series.Add(series26);
-            this.cht002.Size = new System.Drawing.Size(343, 139);
-            this.cht002.TabIndex = 2;
-            this.cht002.Text = "chart2";
-            // 
-            // lab002
-            // 
-            this.lab002.BackColor = System.Drawing.Color.Purple;
-            this.lab002.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lab002.ForeColor = System.Drawing.Color.White;
-            this.lab002.Location = new System.Drawing.Point(0, 0);
-            this.lab002.Name = "lab002";
-            this.lab002.Size = new System.Drawing.Size(343, 35);
-            this.lab002.TabIndex = 0;
-            this.lab002.Text = "  ";
-            this.lab002.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.pbx003);
-            this.panel2.Controls.Add(this.cht003);
-            this.panel2.Controls.Add(this.lab003);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(372, 658);
-            this.panel2.TabIndex = 4;
-            // 
-            // pbx003
-            // 
-            this.pbx003.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbx003.Location = new System.Drawing.Point(0, 35);
-            this.pbx003.Name = "pbx003";
-            this.pbx003.Size = new System.Drawing.Size(372, 484);
-            this.pbx003.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx003.TabIndex = 1;
-            this.pbx003.TabStop = false;
-            // 
-            // cht003
-            // 
-            chartArea27.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea27.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea27.AxisX.Title = "intensity";
-            chartArea27.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea27.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea27.AxisY.Title = "count";
-            chartArea27.Name = "ChartArea1";
-            this.cht003.ChartAreas.Add(chartArea27);
-            this.cht003.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cht003.Location = new System.Drawing.Point(0, 519);
-            this.cht003.Name = "cht003";
-            series27.ChartArea = "ChartArea1";
-            series27.Color = System.Drawing.Color.Green;
-            series27.Name = "Series1";
-            this.cht003.Series.Add(series27);
-            this.cht003.Size = new System.Drawing.Size(372, 139);
-            this.cht003.TabIndex = 2;
-            this.cht003.Text = "chart3";
-            // 
-            // lab003
-            // 
-            this.lab003.BackColor = System.Drawing.Color.Purple;
-            this.lab003.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lab003.ForeColor = System.Drawing.Color.White;
-            this.lab003.Location = new System.Drawing.Point(0, 0);
-            this.lab003.Name = "lab003";
-            this.lab003.Size = new System.Drawing.Size(372, 35);
-            this.lab003.TabIndex = 0;
-            this.lab003.Text = "  ";
-            this.lab003.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tkbThresh
-            // 
-            this.tkbThresh.AutoSize = false;
-            this.tkbThresh.Location = new System.Drawing.Point(8, 95);
-            this.tkbThresh.Maximum = 255;
-            this.tkbThresh.Name = "tkbThresh";
-            this.tkbThresh.Size = new System.Drawing.Size(165, 45);
-            this.tkbThresh.TabIndex = 2;
-            this.tkbThresh.TickFrequency = 16;
-            this.tkbThresh.Value = 128;
-            this.tkbThresh.ValueChanged += new System.EventHandler(this.tkbThresh_ValueChanged);
-            // 
-            // labThresh
-            // 
-            this.labThresh.AutoSize = true;
-            this.labThresh.Location = new System.Drawing.Point(190, 98);
-            this.labThresh.Name = "labThresh";
-            this.labThresh.Size = new System.Drawing.Size(43, 16);
-            this.labThresh.TabIndex = 3;
-            this.labThresh.Text = "label1";
-            // 
-            // btnBlackWhite
-            // 
-            this.btnBlackWhite.Enabled = false;
-            this.btnBlackWhite.Location = new System.Drawing.Point(6, 126);
-            this.btnBlackWhite.Name = "btnBlackWhite";
-            this.btnBlackWhite.Size = new System.Drawing.Size(274, 33);
-            this.btnBlackWhite.TabIndex = 4;
-            this.btnBlackWhite.Text = "Black / White Image";
-            this.btnBlackWhite.UseVisualStyleBackColor = true;
-            this.btnBlackWhite.Click += new System.EventHandler(this.btnBlackWhite_Click);
-            // 
-            // tkbLevel
-            // 
-            this.tkbLevel.AutoSize = false;
-            this.tkbLevel.Location = new System.Drawing.Point(8, 172);
-            this.tkbLevel.Maximum = 32;
-            this.tkbLevel.Minimum = 2;
-            this.tkbLevel.Name = "tkbLevel";
-            this.tkbLevel.Size = new System.Drawing.Size(165, 45);
-            this.tkbLevel.TabIndex = 6;
-            this.tkbLevel.TickFrequency = 4;
-            this.tkbLevel.Value = 16;
-            this.tkbLevel.ValueChanged += new System.EventHandler(this.tkbLevel_ValueChanged);
-            // 
-            // labLevel
-            // 
-            this.labLevel.AutoSize = true;
-            this.labLevel.Location = new System.Drawing.Point(190, 172);
-            this.labLevel.Name = "labLevel";
-            this.labLevel.Size = new System.Drawing.Size(43, 16);
-            this.labLevel.TabIndex = 7;
-            this.labLevel.Text = "label1";
-            // 
-            // btnLeveledGray
-            // 
-            this.btnLeveledGray.Enabled = false;
-            this.btnLeveledGray.Location = new System.Drawing.Point(8, 201);
-            this.btnLeveledGray.Name = "btnLeveledGray";
-            this.btnLeveledGray.Size = new System.Drawing.Size(274, 33);
-            this.btnLeveledGray.TabIndex = 8;
-            this.btnLeveledGray.Text = "Leveled Gray Image";
-            this.btnLeveledGray.UseVisualStyleBackColor = true;
-            this.btnLeveledGray.Click += new System.EventHandler(this.btnLeveledGray_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.pagMonoImage);
@@ -462,8 +213,96 @@
             this.pagMonoImage.Text = "Momo Operations";
             this.pagMonoImage.UseVisualStyleBackColor = true;
             // 
+            // btnBlackWhite
+            // 
+            this.btnBlackWhite.Enabled = false;
+            this.btnBlackWhite.Location = new System.Drawing.Point(6, 126);
+            this.btnBlackWhite.Name = "btnBlackWhite";
+            this.btnBlackWhite.Size = new System.Drawing.Size(274, 33);
+            this.btnBlackWhite.TabIndex = 4;
+            this.btnBlackWhite.Text = "Black / White Image";
+            this.btnBlackWhite.UseVisualStyleBackColor = true;
+            this.btnBlackWhite.Click += new System.EventHandler(this.btnBlackWhite_Click);
+            // 
+            // btnLeveledGray
+            // 
+            this.btnLeveledGray.Enabled = false;
+            this.btnLeveledGray.Location = new System.Drawing.Point(8, 201);
+            this.btnLeveledGray.Name = "btnLeveledGray";
+            this.btnLeveledGray.Size = new System.Drawing.Size(274, 33);
+            this.btnLeveledGray.TabIndex = 8;
+            this.btnLeveledGray.Text = "Leveled Gray Image";
+            this.btnLeveledGray.UseVisualStyleBackColor = true;
+            this.btnLeveledGray.Click += new System.EventHandler(this.btnLeveledGray_Click);
+            // 
+            // btnColorAveragedGray
+            // 
+            this.btnColorAveragedGray.Location = new System.Drawing.Point(6, 9);
+            this.btnColorAveragedGray.Name = "btnColorAveragedGray";
+            this.btnColorAveragedGray.Size = new System.Drawing.Size(274, 33);
+            this.btnColorAveragedGray.TabIndex = 0;
+            this.btnColorAveragedGray.Text = "RGV Averaged Gray Image";
+            this.btnColorAveragedGray.UseVisualStyleBackColor = true;
+            this.btnColorAveragedGray.Click += new System.EventHandler(this.btnColorAveragedGray_Click);
+            // 
+            // labLevel
+            // 
+            this.labLevel.AutoSize = true;
+            this.labLevel.Location = new System.Drawing.Point(190, 172);
+            this.labLevel.Name = "labLevel";
+            this.labLevel.Size = new System.Drawing.Size(43, 16);
+            this.labLevel.TabIndex = 7;
+            this.labLevel.Text = "label1";
+            // 
+            // btnBetterGray
+            // 
+            this.btnBetterGray.Location = new System.Drawing.Point(6, 48);
+            this.btnBetterGray.Name = "btnBetterGray";
+            this.btnBetterGray.Size = new System.Drawing.Size(274, 33);
+            this.btnBetterGray.TabIndex = 1;
+            this.btnBetterGray.Text = "RGV Arranged Gray Image";
+            this.btnBetterGray.UseVisualStyleBackColor = true;
+            this.btnBetterGray.Click += new System.EventHandler(this.btnBetterGray_Click);
+            // 
+            // tkbLevel
+            // 
+            this.tkbLevel.AutoSize = false;
+            this.tkbLevel.Location = new System.Drawing.Point(8, 172);
+            this.tkbLevel.Maximum = 32;
+            this.tkbLevel.Minimum = 2;
+            this.tkbLevel.Name = "tkbLevel";
+            this.tkbLevel.Size = new System.Drawing.Size(165, 45);
+            this.tkbLevel.TabIndex = 6;
+            this.tkbLevel.TickFrequency = 4;
+            this.tkbLevel.Value = 16;
+            this.tkbLevel.ValueChanged += new System.EventHandler(this.tkbLevel_ValueChanged);
+            // 
+            // tkbThresh
+            // 
+            this.tkbThresh.AutoSize = false;
+            this.tkbThresh.Location = new System.Drawing.Point(8, 95);
+            this.tkbThresh.Maximum = 255;
+            this.tkbThresh.Name = "tkbThresh";
+            this.tkbThresh.Size = new System.Drawing.Size(165, 45);
+            this.tkbThresh.TabIndex = 2;
+            this.tkbThresh.TickFrequency = 16;
+            this.tkbThresh.Value = 128;
+            this.tkbThresh.ValueChanged += new System.EventHandler(this.tkbThresh_ValueChanged);
+            // 
+            // labThresh
+            // 
+            this.labThresh.AutoSize = true;
+            this.labThresh.Location = new System.Drawing.Point(190, 98);
+            this.labThresh.Name = "labThresh";
+            this.labThresh.Size = new System.Drawing.Size(43, 16);
+            this.labThresh.TabIndex = 3;
+            this.labThresh.Text = "label1";
+            // 
             // pagColorEdit
             // 
+            this.pagColorEdit.Controls.Add(this.btnHistogramFunction);
+            this.pagColorEdit.Controls.Add(this.rdbFullRange);
+            this.pagColorEdit.Controls.Add(this.rdbFixRange);
             this.pagColorEdit.Controls.Add(this.btnBrightness);
             this.pagColorEdit.Controls.Add(this.btnContrast);
             this.pagColorEdit.Controls.Add(this.labContrast);
@@ -477,6 +316,16 @@
             this.pagColorEdit.TabIndex = 1;
             this.pagColorEdit.Text = "ImageProcess";
             this.pagColorEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnBrightness
+            // 
+            this.btnBrightness.Location = new System.Drawing.Point(10, 54);
+            this.btnBrightness.Name = "btnBrightness";
+            this.btnBrightness.Size = new System.Drawing.Size(319, 33);
+            this.btnBrightness.TabIndex = 10;
+            this.btnBrightness.Text = "Adjust Brightness";
+            this.btnBrightness.UseVisualStyleBackColor = true;
+            this.btnBrightness.Click += new System.EventHandler(this.btnBrightness_Click);
             // 
             // btnContrast
             // 
@@ -532,16 +381,6 @@
             this.labBrightness.TabIndex = 9;
             this.labBrightness.Text = "label1";
             // 
-            // btnBrightness
-            // 
-            this.btnBrightness.Location = new System.Drawing.Point(8, 54);
-            this.btnBrightness.Name = "btnBrightness";
-            this.btnBrightness.Size = new System.Drawing.Size(313, 33);
-            this.btnBrightness.TabIndex = 10;
-            this.btnBrightness.Text = "Adjust Brightness";
-            this.btnBrightness.UseVisualStyleBackColor = true;
-            this.btnBrightness.Click += new System.EventHandler(this.btnBrightness_Click);
-            // 
             // splitContainer3
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -559,6 +398,62 @@
             this.splitContainer3.SplitterDistance = 361;
             this.splitContainer3.TabIndex = 1;
             // 
+            // pnl001
+            // 
+            this.pnl001.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.pnl001.Controls.Add(this.pbx001);
+            this.pnl001.Controls.Add(this.cht001);
+            this.pnl001.Controls.Add(this.lab001);
+            this.pnl001.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl001.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.pnl001.Location = new System.Drawing.Point(0, 0);
+            this.pnl001.Name = "pnl001";
+            this.pnl001.Size = new System.Drawing.Size(361, 658);
+            this.pnl001.TabIndex = 0;
+            // 
+            // pbx001
+            // 
+            this.pbx001.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx001.Location = new System.Drawing.Point(0, 35);
+            this.pbx001.Name = "pbx001";
+            this.pbx001.Size = new System.Drawing.Size(361, 484);
+            this.pbx001.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx001.TabIndex = 1;
+            this.pbx001.TabStop = false;
+            // 
+            // cht001
+            // 
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisX.Title = "intensity";
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.Title = "count";
+            chartArea1.Name = "ChartArea1";
+            this.cht001.ChartAreas.Add(chartArea1);
+            this.cht001.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cht001.Location = new System.Drawing.Point(0, 519);
+            this.cht001.Name = "cht001";
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.Green;
+            series1.Name = "Series1";
+            this.cht001.Series.Add(series1);
+            this.cht001.Size = new System.Drawing.Size(361, 139);
+            this.cht001.TabIndex = 2;
+            this.cht001.Text = "chart1";
+            // 
+            // lab001
+            // 
+            this.lab001.BackColor = System.Drawing.Color.Purple;
+            this.lab001.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lab001.ForeColor = System.Drawing.Color.White;
+            this.lab001.Location = new System.Drawing.Point(0, 0);
+            this.lab001.Name = "lab001";
+            this.lab001.Size = new System.Drawing.Size(361, 35);
+            this.lab001.TabIndex = 0;
+            this.lab001.Text = "  ";
+            this.lab001.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // splitContainer4
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -575,6 +470,163 @@
             this.splitContainer4.Size = new System.Drawing.Size(719, 658);
             this.splitContainer4.SplitterDistance = 343;
             this.splitContainer4.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.pbx002);
+            this.panel1.Controls.Add(this.cht002);
+            this.panel1.Controls.Add(this.lab002);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(343, 658);
+            this.panel1.TabIndex = 3;
+            // 
+            // pbx002
+            // 
+            this.pbx002.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx002.Location = new System.Drawing.Point(0, 35);
+            this.pbx002.Name = "pbx002";
+            this.pbx002.Size = new System.Drawing.Size(343, 484);
+            this.pbx002.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx002.TabIndex = 1;
+            this.pbx002.TabStop = false;
+            // 
+            // cht002
+            // 
+            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea2.AxisX.Title = "intensity";
+            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea2.AxisY.Title = "count";
+            chartArea2.Name = "ChartArea1";
+            this.cht002.ChartAreas.Add(chartArea2);
+            this.cht002.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cht002.Location = new System.Drawing.Point(0, 519);
+            this.cht002.Name = "cht002";
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.Green;
+            series2.Name = "Series1";
+            this.cht002.Series.Add(series2);
+            this.cht002.Size = new System.Drawing.Size(343, 139);
+            this.cht002.TabIndex = 2;
+            this.cht002.Text = "chart2";
+            // 
+            // lab002
+            // 
+            this.lab002.BackColor = System.Drawing.Color.Purple;
+            this.lab002.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lab002.ForeColor = System.Drawing.Color.White;
+            this.lab002.Location = new System.Drawing.Point(0, 0);
+            this.lab002.Name = "lab002";
+            this.lab002.Size = new System.Drawing.Size(343, 35);
+            this.lab002.TabIndex = 0;
+            this.lab002.Text = "  ";
+            this.lab002.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.rtbDiff);
+            this.panel2.Controls.Add(this.pbx003);
+            this.panel2.Controls.Add(this.cht003);
+            this.panel2.Controls.Add(this.lab003);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(372, 658);
+            this.panel2.TabIndex = 4;
+            // 
+            // rtbDiff
+            // 
+            this.rtbDiff.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbDiff.Location = new System.Drawing.Point(7, 119);
+            this.rtbDiff.Name = "rtbDiff";
+            this.rtbDiff.Size = new System.Drawing.Size(357, 302);
+            this.rtbDiff.TabIndex = 3;
+            this.rtbDiff.Text = "";
+            this.rtbDiff.Visible = false;
+            // 
+            // pbx003
+            // 
+            this.pbx003.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbx003.Location = new System.Drawing.Point(0, 35);
+            this.pbx003.Name = "pbx003";
+            this.pbx003.Size = new System.Drawing.Size(372, 484);
+            this.pbx003.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx003.TabIndex = 1;
+            this.pbx003.TabStop = false;
+            // 
+            // cht003
+            // 
+            chartArea3.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea3.AxisX.Title = "intensity";
+            chartArea3.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea3.AxisY.Title = "count";
+            chartArea3.Name = "ChartArea1";
+            this.cht003.ChartAreas.Add(chartArea3);
+            this.cht003.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cht003.Location = new System.Drawing.Point(0, 519);
+            this.cht003.Name = "cht003";
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.Green;
+            series3.Name = "Series1";
+            this.cht003.Series.Add(series3);
+            this.cht003.Size = new System.Drawing.Size(372, 139);
+            this.cht003.TabIndex = 2;
+            this.cht003.Text = "chart3";
+            // 
+            // lab003
+            // 
+            this.lab003.BackColor = System.Drawing.Color.Purple;
+            this.lab003.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lab003.ForeColor = System.Drawing.Color.White;
+            this.lab003.Location = new System.Drawing.Point(0, 0);
+            this.lab003.Name = "lab003";
+            this.lab003.Size = new System.Drawing.Size(372, 35);
+            this.lab003.TabIndex = 0;
+            this.lab003.Text = "  ";
+            this.lab003.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rdbFixRange
+            // 
+            this.rdbFixRange.AutoSize = true;
+            this.rdbFixRange.Checked = true;
+            this.rdbFixRange.Location = new System.Drawing.Point(10, 184);
+            this.rdbFixRange.Name = "rdbFixRange";
+            this.rdbFixRange.Size = new System.Drawing.Size(96, 20);
+            this.rdbFixRange.TabIndex = 14;
+            this.rdbFixRange.TabStop = true;
+            this.rdbFixRange.Text = "Range Fixed";
+            this.rdbFixRange.UseVisualStyleBackColor = true;
+            // 
+            // rdbFullRange
+            // 
+            this.rdbFullRange.AutoSize = true;
+            this.rdbFullRange.Location = new System.Drawing.Point(10, 211);
+            this.rdbFullRange.Name = "rdbFullRange";
+            this.rdbFullRange.Size = new System.Drawing.Size(127, 20);
+            this.rdbFullRange.TabIndex = 15;
+            this.rdbFullRange.Text = "Extend Full Range";
+            this.rdbFullRange.UseVisualStyleBackColor = true;
+            // 
+            // btnHistogramFunction
+            // 
+            this.btnHistogramFunction.Location = new System.Drawing.Point(140, 184);
+            this.btnHistogramFunction.Name = "btnHistogramFunction";
+            this.btnHistogramFunction.Size = new System.Drawing.Size(189, 47);
+            this.btnHistogramFunction.TabIndex = 16;
+            this.btnHistogramFunction.Text = "Histogram Equalization";
+            this.btnHistogramFunction.UseVisualStyleBackColor = true;
+            this.btnHistogramFunction.Click += new System.EventHandler(this.btnHistogramFunction_Click);
             // 
             // MainForm
             // 
@@ -597,20 +649,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxMain)).EndInit();
-            this.pnl001.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx001)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht001)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx002)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht002)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbx003)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cht003)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tkbThresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tkbLevel)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.pagMonoImage.ResumeLayout(false);
             this.pagMonoImage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tkbLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tkbThresh)).EndInit();
             this.pagColorEdit.ResumeLayout(false);
             this.pagColorEdit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tkbContrast)).EndInit();
@@ -619,10 +662,19 @@
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
+            this.pnl001.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbx001)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht001)).EndInit();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbx002)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht002)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbx003)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cht003)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,6 +719,10 @@
         private System.Windows.Forms.Label labBrightness;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.SplitContainer splitContainer4;
+        private System.Windows.Forms.RichTextBox rtbDiff;
+        private System.Windows.Forms.Button btnHistogramFunction;
+        private System.Windows.Forms.RadioButton rdbFullRange;
+        private System.Windows.Forms.RadioButton rdbFixRange;
     }
 }
 
