@@ -92,7 +92,7 @@ namespace ImageProcessingHWK2
             return difference;
         }
 
-        public static ColorImage GetContrasthangedImage(ColorImage img, int contrastLevel)
+        public static ColorImage GetContrastChangedImage(ColorImage img, int contrastLevel)
         {
             double factor = 259.0 * (255 + contrastLevel) / 255.0 / (259.0 - contrastLevel);
             int rows = img.pixels.GetLength(0);
@@ -140,7 +140,7 @@ namespace ImageProcessingHWK2
                     intensities[r, c] = (img.pixels[r, c, 0] + img.pixels[r, c, 1] + img.pixels[r, c, 2]) / 3;
             return new MonoToneImage(intensities);
         }
-        public static MonoToneImage GetGrayFromRGVAranged(ColorImage img, double rFactor = 0.299, double gFactor = 0.587,double bFactor = 0.114 )
+        public static MonoToneImage GetGrayFromRGVDifferentWeighted(ColorImage img, double rFactor = 0.299, double gFactor = 0.587,double bFactor = 0.114 )
         {
             int rows = img.pixels.GetLength(0);
             int cols = img.pixels.GetLength(1);
@@ -164,7 +164,7 @@ namespace ImageProcessingHWK2
 
         public static MonoToneImage GetLeveledGray(MonoToneImage img, int level = 16 )
         {
-            double levelM1div255=  (level - 1.0) / 255.0;
+            double levelM1div255=  (level ) / 255.0;
             int rows = img.intensities.GetLength(0);
             int cols = img.intensities.GetLength(1);
             int[,] intensities = new int[rows, cols];
@@ -172,7 +172,9 @@ namespace ImageProcessingHWK2
                 for (int c = 0; c < cols; c++)
                 {
                     int levelIndex = (int)(img.intensities[r, c] * levelM1div255);
-                    intensities[r, c] = (int)(levelIndex / levelM1div255);
+                    if (levelIndex < 0) levelIndex = 0;
+                    else if (levelIndex >= level) levelIndex = level - 1;
+                    intensities[r, c] = (int)(levelIndex * 255.0 / (level-1));
                 }
             return new MonoToneImage(intensities);
         }

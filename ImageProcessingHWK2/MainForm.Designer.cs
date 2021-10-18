@@ -51,6 +51,9 @@
             this.tkbThresh = new System.Windows.Forms.TrackBar();
             this.labThresh = new System.Windows.Forms.Label();
             this.pagColorEdit = new System.Windows.Forms.TabPage();
+            this.btnHistogramFunction = new System.Windows.Forms.Button();
+            this.rdbFullRange = new System.Windows.Forms.RadioButton();
+            this.rdbFixRange = new System.Windows.Forms.RadioButton();
             this.btnBrightness = new System.Windows.Forms.Button();
             this.btnContrast = new System.Windows.Forms.Button();
             this.labContrast = new System.Windows.Forms.Label();
@@ -72,9 +75,6 @@
             this.pbx003 = new System.Windows.Forms.PictureBox();
             this.cht003 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lab003 = new System.Windows.Forms.Label();
-            this.rdbFixRange = new System.Windows.Forms.RadioButton();
-            this.rdbFullRange = new System.Windows.Forms.RadioButton();
-            this.btnHistogramFunction = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -314,8 +314,40 @@
             this.pagColorEdit.Padding = new System.Windows.Forms.Padding(3);
             this.pagColorEdit.Size = new System.Drawing.Size(335, 256);
             this.pagColorEdit.TabIndex = 1;
-            this.pagColorEdit.Text = "ImageProcess";
+            this.pagColorEdit.Text = "Image Color Processing";
             this.pagColorEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnHistogramFunction
+            // 
+            this.btnHistogramFunction.Location = new System.Drawing.Point(140, 184);
+            this.btnHistogramFunction.Name = "btnHistogramFunction";
+            this.btnHistogramFunction.Size = new System.Drawing.Size(189, 47);
+            this.btnHistogramFunction.TabIndex = 16;
+            this.btnHistogramFunction.Text = "Histogram Equalization";
+            this.btnHistogramFunction.UseVisualStyleBackColor = true;
+            this.btnHistogramFunction.Click += new System.EventHandler(this.btnHistogramFunction_Click);
+            // 
+            // rdbFullRange
+            // 
+            this.rdbFullRange.AutoSize = true;
+            this.rdbFullRange.Location = new System.Drawing.Point(10, 211);
+            this.rdbFullRange.Name = "rdbFullRange";
+            this.rdbFullRange.Size = new System.Drawing.Size(127, 20);
+            this.rdbFullRange.TabIndex = 15;
+            this.rdbFullRange.Text = "Extend Full Range";
+            this.rdbFullRange.UseVisualStyleBackColor = true;
+            // 
+            // rdbFixRange
+            // 
+            this.rdbFixRange.AutoSize = true;
+            this.rdbFixRange.Checked = true;
+            this.rdbFixRange.Location = new System.Drawing.Point(10, 184);
+            this.rdbFixRange.Name = "rdbFixRange";
+            this.rdbFixRange.Size = new System.Drawing.Size(96, 20);
+            this.rdbFixRange.TabIndex = 14;
+            this.rdbFixRange.TabStop = true;
+            this.rdbFixRange.Text = "Range Fixed";
+            this.rdbFixRange.UseVisualStyleBackColor = true;
             // 
             // btnBrightness
             // 
@@ -413,6 +445,7 @@
             // 
             // pbx001
             // 
+            this.pbx001.BackColor = System.Drawing.SystemColors.Control;
             this.pbx001.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbx001.Location = new System.Drawing.Point(0, 35);
             this.pbx001.Name = "pbx001";
@@ -486,6 +519,7 @@
             // 
             // pbx002
             // 
+            this.pbx002.BackColor = System.Drawing.SystemColors.Control;
             this.pbx002.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbx002.Location = new System.Drawing.Point(0, 35);
             this.pbx002.Name = "pbx002";
@@ -555,6 +589,7 @@
             // 
             // pbx003
             // 
+            this.pbx003.BackColor = System.Drawing.SystemColors.Control;
             this.pbx003.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbx003.Location = new System.Drawing.Point(0, 35);
             this.pbx003.Name = "pbx003";
@@ -595,38 +630,6 @@
             this.lab003.TabIndex = 0;
             this.lab003.Text = "  ";
             this.lab003.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rdbFixRange
-            // 
-            this.rdbFixRange.AutoSize = true;
-            this.rdbFixRange.Checked = true;
-            this.rdbFixRange.Location = new System.Drawing.Point(10, 184);
-            this.rdbFixRange.Name = "rdbFixRange";
-            this.rdbFixRange.Size = new System.Drawing.Size(96, 20);
-            this.rdbFixRange.TabIndex = 14;
-            this.rdbFixRange.TabStop = true;
-            this.rdbFixRange.Text = "Range Fixed";
-            this.rdbFixRange.UseVisualStyleBackColor = true;
-            // 
-            // rdbFullRange
-            // 
-            this.rdbFullRange.AutoSize = true;
-            this.rdbFullRange.Location = new System.Drawing.Point(10, 211);
-            this.rdbFullRange.Name = "rdbFullRange";
-            this.rdbFullRange.Size = new System.Drawing.Size(127, 20);
-            this.rdbFullRange.TabIndex = 15;
-            this.rdbFullRange.Text = "Extend Full Range";
-            this.rdbFullRange.UseVisualStyleBackColor = true;
-            // 
-            // btnHistogramFunction
-            // 
-            this.btnHistogramFunction.Location = new System.Drawing.Point(140, 184);
-            this.btnHistogramFunction.Name = "btnHistogramFunction";
-            this.btnHistogramFunction.Size = new System.Drawing.Size(189, 47);
-            this.btnHistogramFunction.TabIndex = 16;
-            this.btnHistogramFunction.Text = "Histogram Equalization";
-            this.btnHistogramFunction.UseVisualStyleBackColor = true;
-            this.btnHistogramFunction.Click += new System.EventHandler(this.btnHistogramFunction_Click);
             // 
             // MainForm
             // 

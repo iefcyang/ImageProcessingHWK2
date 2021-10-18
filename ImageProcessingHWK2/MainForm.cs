@@ -67,7 +67,7 @@ namespace ImageProcessingHWK2
         {
             Cursor = Cursors.WaitCursor;
 
-            gray2 = ColorImage.GetGrayFromRGVAranged(mainImage);
+            gray2 = ColorImage.GetGrayFromRGVDifferentWeighted(mainImage);
             lab002.Text = "RGV Balanced Gray";
             pbx002.Image = gray2.theImage;
             cht002.Series[0].Points.Clear();
@@ -132,7 +132,7 @@ namespace ImageProcessingHWK2
 
         private void btnContrast_Click(object sender, EventArgs e)
         {
-            modifiedImage = ColorImage.GetContrasthangedImage(mainImage, tkbContrast.Value);
+            modifiedImage = ColorImage.GetContrastChangedImage(mainImage, tkbContrast.Value);
             lab002.Text = "Contrast Changed Image";
             pbx002.Image = modifiedImage.TheBitmap;
             cht002.Series[0].Points.Clear();
@@ -144,7 +144,11 @@ namespace ImageProcessingHWK2
 
             rtbDiff.Visible = false;
             pbx003.Image = modifiedImage.TheBitmap;
+            if( rdbFixRange.Checked)
             lab003.Text = "Histogram Equalized Original Range";
+            else
+                lab003.Text = "Histogram Equalized Extended Full Range";
+
 
         }
 
