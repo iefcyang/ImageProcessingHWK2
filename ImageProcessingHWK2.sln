@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingHWK2", "ImageProcessingHWK2\ImageProcessingHWK2.csproj", "{0EBA5197-A637-4B25-9FD7-BD64224A502E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessingHWK3", "ImageProcessingHWK3\ImageProcessingHWK3.csproj", "{6E589C51-B2E9-4DEB-BFE0-AF11257D8A61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0EBA5197-A637-4B25-9FD7-BD64224A502E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBA5197-A637-4B25-9FD7-BD64224A502E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBA5197-A637-4B25-9FD7-BD64224A502E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E589C51-B2E9-4DEB-BFE0-AF11257D8A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E589C51-B2E9-4DEB-BFE0-AF11257D8A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E589C51-B2E9-4DEB-BFE0-AF11257D8A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E589C51-B2E9-4DEB-BFE0-AF11257D8A61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
