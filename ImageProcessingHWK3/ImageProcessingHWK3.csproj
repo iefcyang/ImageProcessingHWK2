@@ -67,6 +67,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Instruction\C1HW03-2021.pdf" />
+    <None Include="Instruction\C1_LECTURE_NOTE_404.pdf" />
+    <None Include="Instruction\Marr-1980-Theroy of Edge Detection.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +82,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Instruction\Image 3-1.JPG" />
+    <Content Include="Instruction\Image 3-2.JPG" />
+    <Content Include="Instruction\Image 3-3.jpg" />
+    <Content Include="Instruction\Image 3-4.jpg" />
+    <Content Include="Instruction\Image 4-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
